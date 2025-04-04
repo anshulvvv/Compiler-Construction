@@ -1,0 +1,6 @@
+On Terminal ->
+
+chmod +x stage1exe
+make run
+
+(change target file in makefile)
