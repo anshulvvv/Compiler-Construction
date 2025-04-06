@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <ctype.h>
+#include <stdarg.h>
 #include "lexerDef.h"
 
 int state = 0;
@@ -556,12 +558,6 @@ void printTokenInfo(const tokenInfo t)
            vocabularyToString(t->tokenName), t->lexeme, t->lineNumber);
 }
 
-
-#include <stdio.h>
-#include <stdlib.h>
-#include <ctype.h>
-#include <string.h>
-#include <stdarg.h>
 
 void reportError(int lineNum, const char *fmt, ...) {
     char errorMessage[256];
